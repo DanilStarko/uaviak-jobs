@@ -1,9 +1,17 @@
 <template>
-  <v-app dark>
-
+  <v-app>
+    <navbar />
+<!--    <v-main>-->
+      <nuxt />
+<!--    </v-main>-->
   </v-app>
 </template>
 
 <script>
-export default {}
+import navbar from '@/components/navbar'
+export default {
+  components: {
+    navbar
+  }
+}
 </script>
