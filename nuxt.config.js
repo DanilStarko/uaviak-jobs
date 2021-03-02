@@ -1,4 +1,4 @@
-// const  colors = require('vuetify/es5/util/colors')
+const  colors = require('vuetify/es5/util/colors').default
 
 const config = {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -16,8 +16,7 @@ const config = {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['@/assets/_global.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -47,17 +46,17 @@ const config = {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/src/scss/variables.scss'],
     theme: {
       themes: {
         dark: {
-          // primary: colors.blue.darken2,
-          // accent: colors.grey.darken3,
-          // secondary: colors.amber.darken3,
-          // info: colors.teal.lighten1,
-          // warning: colors.amber.base,
-          // error: colors.deepOrange.accent4,
-          // success: colors.green.accent3
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
         }
       }
     }

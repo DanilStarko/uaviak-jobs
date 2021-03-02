@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <navbar />
-<!--    <v-main>-->
+    <v-main>
       <nuxt />
-<!--    </v-main>-->
+    </v-main>
   </v-app>
 </template>
 
